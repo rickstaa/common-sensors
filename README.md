@@ -19,10 +19,6 @@ the need to introduce a large set of ROS package dependencies just because of th
 - [laser_filters](http://wiki.ros.org/laser_filters)
 - [openni_launch](http://wiki.ros.org/openni_launch)
 - [common_sensors](https://github.com/JenniferBuehler/common-sensors)
-    
-**TODO** do we need this?
-
-* pluginlib
 
 **Install mandatory dependencies**
 
