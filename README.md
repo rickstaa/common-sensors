@@ -4,27 +4,31 @@ A collection of commonly used sensors: urdf files and a few tools
 
 This package includes a variety of sensor models imported from different ROS packages available throughout the web.
 I picked the best / most suitable models and copied them to this package, so they are all available in one location.
-I may have edited the one or other model but at the time I didn't document which ones they were, and where I
-originally got them from.
+Several changes to the individual models were made, e.g. to share certain common properties, add new properties, gazebo
+tags, model refinements and adding extended models (e.g. a stand for the Xtion).
 
-I also imported from Uni Texas: the FootprintFilter and NanToInfFilter. Here is their [LICENSE](https://github.com/utexas-bwi/segbot/blob/devel/LICENSE).
+Includes: 
 
-For now, this package does only exist so that simple sensor models can be used in the other packages without
+* Kinect sensor based on [turtlebot_description](http://wiki.ros.org/turtlebot_description)
+* Xtion sensor based on [robotnik sensors](https://github.com/RobotnikAutomation/robotnik_sensors/)
+* Hokuyo 04lx based on [robotnik_sensors](https://github.com/RobotnikAutomation/robotnik_sensors/)
+* Hokuyo utm30lx based on [hector_sensors_description](http://wiki.ros.org/hector_sensors_description) 
+* from Uni Texas: copied the FootprintFilter and NanToInfFilter. Here is their [LICENSE](https://github.com/utexas-bwi/segbot/blob/devel/LICENSE).
+
+This package has the aim of grouping several simple sensor models such that they can be used in the other packages without
 the need to introduce a large set of ROS package dependencies just because of the URDF models of the sensors.
-
+Further, most of the urdf models have been improved, but are still based on the originals referenced in the list above.
 
 ### Dependencies
 
-- [shape_tools](http://wiki.ros.org/shape_tools)
 - [laser_filters](http://wiki.ros.org/laser_filters)
 - [openni_launch](http://wiki.ros.org/openni_launch)
-- [common_sensors](https://github.com/JenniferBuehler/common-sensors)
+
 
 **Install mandatory dependencies**
 
 ```
 sudo apt-get install \
-    ros-<distro>-shape-tools \
     ros-<distro>-laser-filters \
     ros-<distro>-openni-launch
 ```
