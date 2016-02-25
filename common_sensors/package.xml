@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>common_sensors</name>
-  <version>0.0.0</version>
+  <version>0.1.0</version>
   <description>
         Variety of sensor models imported from different ROS packages available throughout the web.
         Picked the best / most suitable models and copied them to this package, so they are all available in one location.
