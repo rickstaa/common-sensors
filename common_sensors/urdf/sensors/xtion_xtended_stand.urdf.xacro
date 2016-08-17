@@ -101,7 +101,7 @@
 		<xacro:xtion_standoff number="6" parent="${parent}" x_loc="0" y_loc="0.1" z_loc="${cyl_height*1.5+plate_thickness}" height="${cyl_height}"/>
         <xacro:xtion_plate parent="standoff_6_link" x_loc="0" y_loc="-0.1" z_loc="${cyl_height/2+xtion_mount_z}" angle="${tilting_angle}"/>
 
-		<xacro:sensor_xtion parent="xtion_plate_link" camera_name="jaco_xtion">
+		<xacro:sensor_xtion parent="xtion_plate_link" camera_name="xtion">
 			<origin xyz="0 0 ${xtion_height/2+plate_thickness/2}" rpy="0 0 3.14159" />
 		</xacro:sensor_xtion>
 	</xacro:macro>

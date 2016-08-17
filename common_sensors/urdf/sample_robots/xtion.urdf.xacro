@@ -21,5 +21,5 @@
 	</joint>
 
 	<xacro:include filename="$(find common_sensors)/urdf/sensors/xtion_xtended_stand.urdf.xacro" /> 
-	<xacro:xtion_stand parent="xtion_base" tilting_angle="-0.7853"/>
+	<xacro:xtion_stand parent="xtion_base" tilting_angle="-0.2"/>
 </robot>
