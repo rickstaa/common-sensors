@@ -36,7 +36,7 @@
 		</link>
 
 		<joint name="camera_joint" type="fixed">
-			<origin xyz="-0.031 ${-cam_y} -0.016" rpy="0 0 0"/>
+			<origin xyz="-0.031 ${-cam_py} -0.016" rpy="0 0 0"/>
 			<parent link="camera_rgb_frame"/>
 			<child link="camera_link"/>
 		</joint>
@@ -65,7 +65,7 @@
 		 files. However, for Gazebo simulation we need them, so we add them here.
 		 (Hence, don't publish them additionally!) -->
 		<joint name="camera_depth_joint" type="fixed">
-			<origin xyz="0 ${2 * -cam_y} 0" rpy="0 0 0" />
+			<origin xyz="0 ${2 * -cam_py} 0" rpy="0 0 0" />
 			<parent link="camera_rgb_frame" />
 			<child link="camera_depth_frame" />
 		</joint>
