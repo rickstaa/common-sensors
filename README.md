@@ -10,6 +10,7 @@ tags, model refinements and adding extended models (e.g. a stand for the Xtion).
 Includes: 
 
 * Kinect sensor based on [turtlebot_description](http://wiki.ros.org/turtlebot_description)
+* Kinect2 sensor based on [PR2_common](https://github.com/PR2/pr2_common)
 * Xtion sensor based on [robotnik sensors](https://github.com/RobotnikAutomation/robotnik_sensors/)
 * Hokuyo 04lx based on [robotnik_sensors](https://github.com/RobotnikAutomation/robotnik_sensors/)
 * Hokuyo utm30lx based on [hector_sensors_description](http://wiki.ros.org/hector_sensors_description) 
