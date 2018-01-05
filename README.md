@@ -10,6 +10,7 @@ tags, model refinements and adding extended models (e.g. a stand for the Xtion).
 Includes: 
 
 * Kinect sensor based on [turtlebot_description](http://wiki.ros.org/turtlebot_description)
+* Kinect2 sensor based on [PR2_common](https://github.com/PR2/pr2_common)
 * Xtion sensor based on [robotnik sensors](https://github.com/RobotnikAutomation/robotnik_sensors/)
 * Hokuyo 04lx based on [robotnik_sensors](https://github.com/RobotnikAutomation/robotnik_sensors/)
 * Hokuyo utm30lx based on [hector_sensors_description](http://wiki.ros.org/hector_sensors_description) 
@@ -23,7 +24,7 @@ Further, most of the urdf models have been improved, but are still based on the 
 
 - [laser_filters](http://wiki.ros.org/laser_filters)
 - [openni_launch](http://wiki.ros.org/openni_launch)
-
+- [gazebo-plugins](http://wiki.ros.org/gazebo_plugins)
 
 **Install mandatory dependencies**
 
@@ -31,6 +32,7 @@ Further, most of the urdf models have been improved, but are still based on the 
 sudo apt-get install \
     ros-<distro>-laser-filters \
     ros-<distro>-openni-launch
+    ros-<distro>-gazebo-plugins
 ```
 
 **Install common-sensors**
@@ -54,4 +56,18 @@ To compile, you can now use catkin\_make as usual:
 ```
 cd ..
 catkin_make
+```
+
+
+**Test a sample robot**
+
+There are some sample robots with just the sensor in it in the director
+``urdf/sample_robots``.
+
+For example, for Kinect v2:
+
+```
+roslaunch gazebo_ros empty_world.launch
+rosrun gazebo_ros spawn_model -file \
+  `rospack find common_sensors`/urdf/sample_robots/kinectv2.urdf -urdf -model kinect2
 ```
