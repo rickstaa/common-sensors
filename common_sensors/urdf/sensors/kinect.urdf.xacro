@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <root name="sensor_kinect" xmlns:xacro="http://ros.org/wiki/xacro">
 	<xacro:include filename="$(find common_sensors)/urdf/sensors/kinect_gazebo.xacro" />
-        <xacro:include filename="$(find common_sensors)/urdf/sensors/kinect_properties.urdf.xacro"/>
+  <xacro:include filename="$(find common_sensors)/urdf/sensors/kinect_properties.urdf.xacro"/>
 
-   	<!-- camera_name has to be unique! -->
-	<xacro:kinect_sensor link_name="camera_depth_frame" camera_name="camera1" frame_name="camera_depth_optical_frame"/>
+  <!-- camera_name has to be unique! -->
+  <xacro:kinect_sensor link_name="camera_depth_frame" camera_name="camera1"
+                       frame_name="camera_depth_optical_frame"/>
 
-	
 	<!-- Parameterised in part by the values in kinect_properties.urdf.xacro -->
 	<xacro:macro name="sensor_kinect" params="parent">
 		<joint name="camera_rgb_joint" type="fixed">
