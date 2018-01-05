@@ -24,7 +24,7 @@ Further, most of the urdf models have been improved, but are still based on the 
 
 - [laser_filters](http://wiki.ros.org/laser_filters)
 - [openni_launch](http://wiki.ros.org/openni_launch)
-
+- [gazebo-plugins](http://wiki.ros.org/gazebo_plugins)
 
 **Install mandatory dependencies**
 
@@ -32,6 +32,7 @@ Further, most of the urdf models have been improved, but are still based on the 
 sudo apt-get install \
     ros-<distro>-laser-filters \
     ros-<distro>-openni-launch
+    ros-<distro>-gazebo-plugins
 ```
 
 **Install common-sensors**
