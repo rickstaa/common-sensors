@@ -56,3 +56,17 @@ To compile, you can now use catkin\_make as usual:
 cd ..
 catkin_make
 ```
+
+
+**Test a sample robot**
+
+There are some sample robots with just the sensor in it in the director
+``urdf/sample_robots``.
+
+For example, for Kinect v2:
+
+```
+roslaunch gazebo_ros empty_world.launch
+rosrun gazebo_ros spawn_model -file \
+  `rospack find common_sensors`/urdf/sample_robots/kinectv2.urdf -urdf -model kinect2
+```
