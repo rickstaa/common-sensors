@@ -1,8 +1,9 @@
 <?xml version="1.0"?>
-<robot name="xtion_gazebo" xmlns:xacro="http://ros.org/wiki/xacro">
+<robot name="xtion_gazebo" 
+  xmlns:xacro="http://ros.org/wiki/xacro">
   <!-- Microsoft Kinect / ASUS Xtion PRO Live for simulation -->
   <xacro:macro name="xtion_sim_3dsensor" params="camera_name">
-    <gazebo reference="${camera_name}_depth_frame">  
+    <gazebo reference="${camera_name}_depth_frame">
       <sensor type="depth" name="${camera_name}">
         <always_on>true</always_on>
         <update_rate>20.0</update_rate>
